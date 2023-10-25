@@ -1,0 +1,296 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#b04e1b;
+    padding: 10px 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header{
+    padding:10px 16px;
+    background: #b04e1b;
+    color: white;
+}
+.content{
+    padding: 16px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky+.content{
+    padding-top: 102px;
+}
+section{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+section+section{
+    margin-top: 20px;
+}
+
+#home{
+    background-image: url(../img/college.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.home h2,button{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 35px;
+    margin-left: 30px;
+  }
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #fefefe;
+}
+.form-container {
+    padding: 20px;
+}
+.form-container input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.form-container .btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.form-container .btn.cancel {
+    background-color: #f44336;
+}
+  
+.marq{
+    position:relative;
+    top:100px;
+
+}
+
+#home{
+    margin-top: 70px;
+}
+/********** News, Event, Notice Board CSS Starts **********/  
+.event {
+    width: 31%;
+    margin-right: 1%;
+    float: left;
+    color:white;
+    margin: 10px;
+}
+.event div {
+    padding:10px;
+    background-color: #f0f3fa;
+    color: black;
+}
+.event ul li {
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+.event div img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+#events{
+    background-image: url(../img/events.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+/********** News, Event, Notice Board CSS Ends **********/
+/********** About Us CSS Starts **********/  
+.about-us img {
+    width:24%;
+    float:left;
+}
+.about-us div {
+    width:70%;
+    margin-left:20px;
+    float:left;
+    line-height:35px;
+    color: black;
+}
+/********** About Us CSS Ends **********/
+
+/********** Testimonial CSS Starts **********/  
+.heading-1{
+    color: white;
+}
+.heading{
+    color:#b04e1b;
+}
+.testimonial {
+    width: 380px;
+    float: left;
+    margin-right:10px;
+}
+.testimonial-text {
+    background: black;
+    color:white;
+    padding: 20px;
+    line-height: 35px;
+    border-radius: 10px;
+}
+.testimonial-detail {
+    float:left;
+    margin-top:10px;
+}
+.testimonial-img {
+
+    float:left;
+}
+.testimonial-img img {
+    border-radius:50%;
+    width: 50px;
+}
+.testimonial-name {
+    margin-left:10px;
+    float:left;
+    color: black;
+}
+.testimonial-name h5 {
+    font-size:18px;
+    margin-top:8px;
+}
+/********** Testimonial CSS Ends **********/
+
+/********** Gallery CSS Starts **********/  
+
+.gallery img {
+    width: 24%;
+}
+/********** Gallery CSS Ends **********/
+
+/********** Placement CSS Starts **********/  
+.placement img {
+    border:1px solid #dfdfdf;
+    margin: 20px;
+    width: 200px;
+}
+/********** Placement CSS Ends **********/
+/********** Footer CSS Starts **********/  
+.footer {
+    background-color:#1f2836;
+    padding:70px 0px;
+    width:100%;
+    float:left;
+}
+.footer-sect {
+    width:33%;
+    float:left;
+}
+.footer-sect h2 {
+    color:#fff;
+    margin-bottom: 20px;
+}
+.footer-sect img{
+    width: 50px;
+    border-radius: 50%;
+}
+.footer-sect p {
+    color: #fff;
+    line-height: 22px;
+    padding:0px 30px 20px 0px;
+    text-align: justify;
+}
+.footer-menu li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+.footer-menu li a {
+    color:#fff;
+    text-decoration: none;
+}
+.footer-contact li {
+    margin-bottom:15px;
+    list-style: none;
+    color: #fff;
+}
+/********** Footer CSS Ends **********/
+
+
